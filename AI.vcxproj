@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AIGame\Camera.cpp" />
+    <ClCompile Include="src\AIGame\Entities\AIActorEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\AnimatedSpriteEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\BulletTrailEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\Entity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\EntityList.cpp" />
+    <ClCompile Include="src\AIGame\Entities\ActorEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\HealthPickupEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\PickupEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\PlayerEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\PlayerRespawnerEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\RespawnerEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\SpriteEntity.cpp" />
+    <ClCompile Include="src\AIGame\Entities\WeaponPickupEntity.cpp" />
+    <ClCompile Include="src\AIGame\Game.cpp" />
+    <ClCompile Include="src\AIGame\GOAP\Planner.cpp" />
+    <ClCompile Include="src\AIGame\GOAP\State\WorldState.cpp" />
+    <ClCompile Include="src\AIGame\Graphics\SpriteBatch.cpp" />
+    <ClCompile Include="src\AIGame\Graphics\TileDrawer.cpp" />
+    <ClCompile Include="src\AIGame\HUD\HUD.cpp" />
+    <ClCompile Include="src\AIGame\Input\InputManager.cpp" />
+    <ClCompile Include="src\AIGame\Particles\ParticleManager.cpp" />
+    <ClCompile Include="src\AIGame\PathFinding\PathFinder.cpp" />
+    <ClCompile Include="src\AIGame\PathFinding\ConcurrentPathFinder.cpp" />
+    <ClCompile Include="src\AIGame\Resource\ResourceManager.cpp" />
+    <ClCompile Include="src\AIGame\Weapons\WeaponsList.cpp" />
+    <ClCompile Include="src\Base64\Base64.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\AIGame\Map\Map.cpp" />
+    <ClCompile Include="src\Misc\Geometry.cpp" />
+    <ClCompile Include="src\Misc\Misc.cpp" />
+    <ClCompile Include="src\Misc\Random.cpp" />
+    <ClCompile Include="src\Misc\VectorMaths.cpp" />
+    <ClCompile Include="src\TinyXML2\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AIGame\Camera.hpp" />
+    <ClInclude Include="include\AIGame\Entities\AIActorEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\AnimatedSpriteEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\BulletTrailEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\Entity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\ActorEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\HealthPickupEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\PickupEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\PlayerEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\RespawnerEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\SpriteEntity.hpp" />
+    <ClInclude Include="include\AIGame\Entities\WeaponPickupEntity.hpp" />
+    <ClInclude Include="include\AIGame\Game.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\Actions\Action.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\ImmutableWorldState.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\Planner.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\State\Goal.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\State\WorldProperty.hpp" />
+    <ClInclude Include="include\AIGame\GOAP\State\WorldState.hpp" />
+    <ClInclude Include="include\AIGame\Graphics\Spritebatch.hpp" />
+    <ClInclude Include="include\AIGame\Graphics\TileDrawer.hpp" />
+    <ClInclude Include="include\AIGame\HUD\HUD.hpp" />
+    <ClInclude Include="include\AIGame\Input\InputManager.hpp" />
+    <ClInclude Include="include\AIGame\Macros.hpp" />
+    <ClInclude Include="include\AIGame\Entities\EntityList.hpp" />
+    <ClInclude Include="include\AIGame\Map\Map.hpp" />
+    <ClInclude Include="include\AIGame\Particles\ParticleManager.hpp" />
+    <ClInclude Include="include\AIGame\PathFinding\ConcurrentPathFinder.hpp" />
+    <ClInclude Include="include\AIGame\PathFinding\PathFinder.hpp" />
+    <ClInclude Include="include\AIGame\Resource\ResourceManager.hpp" />
+    <ClInclude Include="include\AIGame\Weapons\WeaponsList.hpp" />
+    <ClInclude Include="include\Base64\Base64.hpp" />
+    <ClInclude Include="include\Misc\Geometry.hpp" />
+    <ClInclude Include="include\Misc\Misc.hpp" />
+    <ClInclude Include="include\Misc\Random.hpp" />
+    <ClInclude Include="include\Misc\VectorMaths.hpp" />
+    <ClInclude Include="include\TinyXML2\tinyxml2.hpp" />
+    <ClInclude Include="include\AIGame\Entities\PlayerRespawnerEntity.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3D0E71EB-8EEA-49AA-88B5-A837659E2E58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Physics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\obj</IntDir>
+    <LibraryPath>$(ProjectDir)libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)bin\$(Configuration)\obj</IntDir>
+    <LibraryPath>$(ProjectDir)libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Box2D-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;gwen_staticd.lib;unittestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(TargetDir)data"
+xcopy "$(ProjectDir)data" "$(TargetDir)data" /s /Y</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy data files to build directory</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Box2D.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;gwen_static.lib;unittest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(TargetDir)data"
+xcopy "$(ProjectDir)data" "$(TargetDir)data" /s /Y</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy data files to build directory</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
